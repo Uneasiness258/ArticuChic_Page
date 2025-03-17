@@ -19,7 +19,7 @@
  * 3. 日期格式建议使用: "YYYY-MM-DD"（如 2024-03-15）格式，以确保排序正确
  * 4. 新闻会按日期自动倒序排列，最新日期的新闻会显示在前面，所以添加新闻时无需考虑顺序问题
  */
-
+import new250317 from "./news250317"
 import cxNews1 from "./cxNews1";
 import cxNews2 from "./cxNews2";
 import cxNews3 from "./cxNews3";
@@ -66,7 +66,19 @@ const newsRegistry = {
       category: "Weekly Work",
       author: "蔡旭",
     },
-  },
+    },
+    250317: {
+        component: news250317,
+        info: {
+            id: "250317",
+            title: "杨功渤’s work from 3.11 to 3.16",
+            date: "2025-03-17", // 确保使用标准日期格式：YYYY-MM-DD
+            summary: "两项任务",
+            image: new URL("../ArticuChic/assets/yang.jpg", import.meta.url).href,
+            category: "Weekly Work",
+            author: "杨功渤",
+        },
+    },
   // 在这里注册更多新闻...
   // "your-news-id": { ... }
 
